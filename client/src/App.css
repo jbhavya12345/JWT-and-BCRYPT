@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#container {
+  background-color: rgb(64, 112, 244);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+#minContainer {
+  background-color: white;
+  border-radius: 4px;
+  width: 30%;
+  margin: 12.5vh 35%;
+  font-size: 28px;
+  height: 73vh;
+  padding-top: 2vh; 
+}
+
+#minContainer h1{
+    text-align: center;
+}
+
+#minContainer button{
+    width: 89%;
+    padding: 12px 23px;
+    font-size: 24px;
+    margin: 10px 5%;
+    background-color: rgb(64, 112, 244);
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+}
+#minContainer input{
+    margin: 10px 5%;
+    width: 80%;
+    font-size: 18px;
+    padding: 3% 4%;
+}
+#minContainer input[type = "checkbox"]{
+    width: 20px;
+}
+
+#minContainer span{
+    font-size: 16px;
+}
