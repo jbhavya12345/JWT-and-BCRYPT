@@ -20,7 +20,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "require all fields"],
         unique: [true, "phoneNumber Already registered"]
-
+    },
+    refreshToken: {
+        type: String,
+        unique: [true, "Token should be unique"]
     }
 }, {timestamps: true})
 

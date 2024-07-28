@@ -3,6 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import router from "./routes/user.route.js";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -17,8 +18,10 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
-// Use CORS middleware
+// Use CORS & cookiwParser middleware
 app.use(cors(corsOptions));
+app.use(cookieParser());
+
 
 // Use middleware to parse JSON request bodies
 app.use(express.json());
